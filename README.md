@@ -58,6 +58,46 @@ DCWRISM-CropIrrigation/
 
 ---
 
+## 技术实现细节
+
+### 架构概览
+
+项目采用扁平结构，核心代码位于根目录。
+
+### 核心类与模块
+
+- **DataLoader**
+
+### 关键函数
+
+- `evaluate_model`, `evaluate_test_years`, `load_weather_data`, `load_crop_area`
+
+### 技术栈与依赖
+
+**核心框架/库**：NumPy, pandas
+
+**主要 import**：
+```python
+import sys
+import pandas as pd
+import numpy as np
+from scipy.optimize import minimize, differential_evolution
+from data_loader import DataLoader
+from dcwrism_model import DCWRISMModel
+import io
+import sys
+import pandas as pd
+import numpy as np
+```
+
+### 实现要点
+
+- 以 `DataLoader` 为核心类，封装主要业务逻辑
+- 通过 `evaluate_model` 等函数实现核心流程编排
+- 基于 NumPy, pandas 构建，保证技术栈成熟稳定
+- 代码结构清晰，模块间低耦合，便于扩展和维护
+
+---
 ## License
 
 MIT — free to use, modify and distribute.
