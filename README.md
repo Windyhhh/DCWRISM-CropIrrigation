@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌾 DCWRISM-CropIrrigation
+# 作物灌溉模型 | DCWRISM-CropIrrigation
 
 ### Physics-empirical crop irrigation water demand model.
 
